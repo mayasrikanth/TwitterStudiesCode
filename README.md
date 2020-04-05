@@ -73,6 +73,14 @@ From here, you have a few options.
 
 ### Finding New Keywords
 
+In terminal, ensure you are in the "twitter" directory, and type the command:
+```linux
+python word_dist.py
+```
+You will be prompted to enter your keyword of interest (e.g. "#metoo", yes, your keyword can contain the hash character), and the number of closest words you'd like to see (e.g. 10). Please note that our current implementation is case-insensitive and saves all words in the corpus as lower-case. Thus, your keyword needs to be a LOWER CASE word. You will see two things: (1) a list of the top-x words closest to your keyword in the GloVe embedding space by the cosine similarity metric, (2) a t-SNE plot visualizing these words in two-dimensions. Here is an example of what the plot (2) looks like: 
+
+
+
 
 ### Visualizing Topics as Clusters 
 
