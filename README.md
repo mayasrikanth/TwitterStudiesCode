@@ -45,7 +45,7 @@ LDA!
 The file twitter/preprocess.py is for preprocessing data, and the files twitter/word_dist.py and twitter/word_cloud.py are for data analysis. The file GloVe-1.2 contains code to train the GloVE model. These details will be covered once more in the appropriate section!
 
 
-### Preprocessing DATA
+### Preprocessing Data
 
 To preprocess your data, drag your .csv file into the "twitter" directory. In your
 terminal, run the following command. You will be prompted to enter the name of your raw data, as well as the name of your preprocessed output file. 
@@ -70,10 +70,11 @@ From here, you have a few options.
 
 
 ** More content coming soon... 
-### Finding new keywords
+
+### Finding New Keywords
 
 
 ### Visualizing Topics as Clusters 
 
 
-### Word Cloud visualizations 
+### Word Cloud Visualizations 
