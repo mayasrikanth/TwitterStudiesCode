@@ -13,8 +13,8 @@ Collaborators: Angie Liu, Mike Alvarez,Anima Anandkumar,
 Nicholas Adams-Cohen, Maya Srikanth. 
 
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+```python
+def foo():
+    if not bar:
+        return True
 ```
