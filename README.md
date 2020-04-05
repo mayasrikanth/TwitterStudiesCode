@@ -27,7 +27,7 @@ Word Representation), a renown word embedding model proposed in 2014 by Stanford
 See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 
 
-## What is this code for?
+## What exactly this code for?
 
 This repository contains code to preprocess your social media data, construct a GloVe representation of 
 all non "stop words" in your corpus, produce meaningful visualizations of keywords or hashtags, and
