@@ -26,15 +26,7 @@ punctuation = list(string.punctuation)
 stop_words = stopwords.words('english')
 
 def deEmojify(inputString):
-    temp = inputString.encode('ascii', 'ignore')
-    try:
-        temp.decode('ascii')
-    except UnicodeDecodeError:
-        print("it was not a ascii-encoded unicode string")
-    else:
-        print("we good")
-        return temp.decode('ascii')
-    #return inputString.encode('ascii', 'ignore').decode('ascii')
+    return inputString.encode('ascii', 'ignore').decode('ascii')
 
 # Initializing stemming and lemmatization objects
 stemmer = PorterStemmer()
@@ -64,15 +56,10 @@ def parseFile(filename, outfile):
                 print(line_count)
                 if len(row) is not 0:
                     print(row)
-                    if line_count == 689835:
-                        print("here's the problematic row: ", row)
                     # Removing mentions, URLS, emojiis and tokenizing
                     clean_row = p.clean(row[0])
                     clean_row = deEmojify(clean_row)
                     tokens = p.tokenize(clean_row)
-
-
-
 
                     temp = " {}"
                     final = temp.format(tokens)
@@ -98,11 +85,10 @@ def parseFile(filename, outfile):
                csv_file.write('\n')
                csv_file.write('\n')
 
-# takes input of form: python3 preprocess.py inputfile.json outputfile.txt
+# takes input of form: python preprocess.py inputfile.csv outputfile.csv
 if __name__ == '__main__':
 
      inFile = input('Name of input file?: ')
      outputFile = input('Name of output file? : ')
-     #inFile = sys.argv[-2] #(2nd to last arg on command line)
-     #outputFile = sys.argv[-1]
+   
      parseFile(inFile, outputFile)
