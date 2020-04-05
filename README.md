@@ -10,5 +10,4 @@ data analyzed thus far is queried on a #MeToo-related keyword.
 
 
 Collaborators: Angie Liu, Mike Alvarez,Anima Anandkumar, 
-Nicholas Adams-Cohen, Sarah Kangaslahti, Tina Wang, 
-Jennie Chung, Maya Srikanth. 
+Nicholas Adams-Cohen, Maya Srikanth. 
