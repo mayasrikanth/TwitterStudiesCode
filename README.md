@@ -1,11 +1,14 @@
 # TwitterStudiesCode
 
+
+Read this guide for instructions on how to use our code!
+
 # Motivation 
 
 Code for an ongoing project to understand network effects 
 and sentiment propogation in a social media network, with 
 the ultimate aim of reducing online abuse using AI techniques. 
-The current focusof the project is the #MeToo twitter movement--all Twitter
+The current focus of the project is the #MeToo twitter movement--all Twitter
 data analyzed thus far is queried on a #MeToo-related keyword. 
 
 Collaborators: 
@@ -26,12 +29,13 @@ See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 
 # What is this code for?
 
-This repository contains code to preprocess your social media data, construct GloVe representation of 
+This repository contains code to preprocess your social media data, construct a GloVe representation of 
 all non "stop words" in your corpus, produce meaningful visualizations of keywords or hashtags, and
 expose conversation topics in your data using cluster analysis (specifically, k-means clustering).
 
-As this is an ongoing project, I am working to include additional scripts for topic modeling analysis using 
-LDA.
+I am currently working on including additional scripts for topic modeling analysis using 
+LDA!
+
 
 ## Required External Libraries
 - nltk 
@@ -39,9 +43,8 @@ LDA.
 - pandas 
 
 ## File Organization 
+The file twitter/preprocess.py is for preprocessing data, and the files twitter/word_dist.py and twitter/word_cloud.py are for data analysis. The file GloVe-1.2 contains code to train the GloVE model. These details will be covered once more in the appropriate section!
 
-
-## Commands 
 
 ### PREPROCESSING DATA
 
@@ -53,20 +56,25 @@ python preprocess.py
 ```
 
 ### Training GLOVE
-Locate the shell script twitter/Glove-1.2/demo.sh, and set the parameter "CORPUS" to 
-"CORPUS= ../your_preprocessed_output.csv" To train the GloVe model on your corpus, type in terminal:
+Locate the shell script **twitter/Glove-1.2/demo.sh**, and set the parameter **"CORPUS"** to 
+**"CORPUS= ../your_preprocessed_output.csv"** To train the GloVe model on your corpus, type in terminal:
 ```linux
 cd GloVe-1.2
 ./demo.sh
 ```
-In the future, we will work on making this process more automated. From here, there are several options you have.
-You can (1) Find closest words to a given keyword using cosine similarity (twitter/word_dist.py), (2) Visualize words in k-means clusters containing a certain keyword (twitter/word_dist.py), or (3) visualize a word cloud of your top keywords based on cosine similarity. 
+In the future, we will work on making this process more automated!
 
-fill in... (update all scripts)
+From here, you have a few options.
+- (1) Find closest words to a given keyword using cosine similarity (twitter/word_dist.py)
+- (2) Visualize words in k-means clusters containing a certain keyword (twitter/word_dist.py)
+- (3) visualize a word cloud of your top keywords based on cosine similarity (twitter/word_cloud.py)
+
+
+** More content coming soon... 
 ### Finding new keywords
 
 
-### Visualize Clusters 
+### Visualizing Topics as Clusters 
 
 
-### Word Cloud  
+### Word Cloud visualizations 
