@@ -1,9 +1,14 @@
 import preprocessor as p
 import re
+
+import sys
+
+
 # remove stopwords
 import nltk
 from nltk.corpus import stopwords
-nltk.download('stopwords')
+#nltk.download('stopwords')
+
 # from stop_words import get_stop_words
 # stemming
 from nltk.stem import PorterStemmer
@@ -11,12 +16,26 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
 import csv
+
+
 p.set_options(p.OPT.URL, p.OPT.MENTION, p.OPT.EMOJI, p.OPT.SMILEY)
 preprocessed = []
 
 # Storing stopwords
 punctuation = list(string.punctuation)
-stop_words = stopwords.words('english') + punctuation + ["MENTION"]
+stop_words = stopwords.words('english')
+
+def deEmojify(inputString):
+    temp = inputString.encode('ascii', 'ignore')
+    try:
+        temp.decode('ascii')
+    except UnicodeDecodeError:
+        print("it was not a ascii-encoded unicode string")
+    else:
+        print("we good")
+        return temp.decode('ascii')
+    #return inputString.encode('ascii', 'ignore').decode('ascii')
+
 # Initializing stemming and lemmatization objects
 stemmer = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
@@ -26,10 +45,13 @@ def removeStopWords(w):
         return False
     else:
         return True
+
 # Stemming function
 def stem(w):
     return stemmer.stem(w)
-def parseFile(filename):
+
+
+def parseFile(filename, outfile):
     with open(filename) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter='\n')
         line_count = 0
@@ -41,41 +63,46 @@ def parseFile(filename):
                 #print(row)
                 print(line_count)
                 if len(row) is not 0:
-                    # remove stopwords from line before tokenizing
-                    #print(row[0])
-                    tokens = p.tokenize(row[0])
-                    #tokens = word_tokenize(row[0])
-                    #tokens = [i for i in tokens if i not in stop_words]
-                    letters_only_text = re.sub("^[a-z A-Z]", "", tokens)
+                    print(row)
+                    if line_count == 689835:
+                        print("here's the problematic row: ", row)
+                    # Removing mentions, URLS, emojiis and tokenizing
+                    clean_row = p.clean(row[0])
+                    clean_row = deEmojify(clean_row)
+                    tokens = p.tokenize(clean_row)
+
+
+
+
+                    temp = " {}"
+                    final = temp.format(tokens)
+
+                    letters_only_text = re.sub(r"[^a-zA-Z\'\#]", " ", final).lower()
                     word_array = letters_only_text.split()
                     word_array = [term for term in word_array if term not in stop_words]
-                    # Stemming (TOO STRONG...)
-                    #word_array = map(stem, word_array)
+
                     # Recreating string
                     cleaned = " ".join(word_array)
                     print(cleaned)
-                    preprocessed.append(cleaned)
+                    if len(cleaned) > 0:
+                        preprocessed.append(cleaned)
                     line_count += 1
+
         print(f'Processed {line_count} lines.')
     print(len(preprocessed))
 
-# Calling parse file function now with two files
-parseFile('TweetText30Day.txt') # Collecting late-september from sandbox
-parseFile('MeTooRound2.txt') # Collecting late-august from standard search
-parseFile('MeTooTweetsOct.txt') # Collected mid-october from standard search
+    # Writing preprocessed, emoji-free tweets to csv file.
+    with open(outfile, mode='w') as csv_file:
+        for i in range(len(preprocessed)):
+               csv_file.write(preprocessed[i])
+               csv_file.write('\n')
+               csv_file.write('\n')
 
-# Combining various data
-with open('camReadyResults.csv', mode='a') as csv_file:
-    for i in range(len(preprocessed)):
-           csv_file.write(preprocessed[i])
-           csv_file.write('\n')
-           csv_file.write('\n')
+# takes input of form: python3 preprocess.py inputfile.json outputfile.txt
+if __name__ == '__main__':
 
-
-#with open('preprocessd_SandboxOld.csv', mode='w') as csv_file:
-    
-  #  for i in range(len(preprocessed)):
-
-    #    csv_file.write(preprocessed[i])
-     #   csv_file.write('\n')
-      #  csv_file.write('\n')
+     inFile = input('Name of input file?: ')
+     outputFile = input('Name of output file? : ')
+     #inFile = sys.argv[-2] #(2nd to last arg on command line)
+     #outputFile = sys.argv[-1]
+     parseFile(inFile, outputFile)
