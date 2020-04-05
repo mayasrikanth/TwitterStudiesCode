@@ -1,7 +1,7 @@
 # TwitterStudiesCode
 
 
-Read this guide for instructions on how to use our code!
+Read this guide for instructions on how best to utilize our code!
 
 # Motivation 
 
@@ -46,7 +46,7 @@ LDA!
 The file twitter/preprocess.py is for preprocessing data, and the files twitter/word_dist.py and twitter/word_cloud.py are for data analysis. The file GloVe-1.2 contains code to train the GloVE model. These details will be covered once more in the appropriate section!
 
 
-### PREPROCESSING DATA
+### Preprocessing DATA
 
 To preprocess your data, drag your .csv file into the "twitter" directory. In your
 terminal, run the following command. You will be prompted to enter the name of your raw data, as well as the name of your preprocessed output file. 
@@ -55,7 +55,7 @@ terminal, run the following command. You will be prompted to enter the name of y
 python preprocess.py
 ```
 
-### Training GLOVE
+### Training GloVe
 Locate the shell script **twitter/Glove-1.2/demo.sh**, and set the parameter **"CORPUS"** to 
 **"CORPUS= ../your_preprocessed_output.csv"** To train the GloVe model on your corpus, type in terminal:
 ```linux
