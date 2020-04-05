@@ -32,8 +32,6 @@ See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 This repository contains code to preprocess your social media data, construct a GloVe representation of 
 all non "stop words" in your corpus, produce meaningful visualizations of keywords or hashtags, and
 expose conversation topics in your data using cluster analysis (specifically, k-means clustering).
-I am currently working on including additional scripts for topic modeling analysis using 
-LDA!
 
 
 ## Required External Libraries
