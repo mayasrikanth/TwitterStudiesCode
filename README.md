@@ -1,7 +1,7 @@
 # TwitterStudiesCode
 
 
-Read this guide for instructions on how best to utilize our code!
+Read this guide for instructions on how best to utilize our code.
 
 # Motivation 
 
