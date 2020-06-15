@@ -11,12 +11,6 @@ the ultimate aim of proposing an AI-driven solution for online abuse.
 The current focus of our work is the #MeToo twitter movement--all Twitter
 data analyzed thus far is queried on a #MeToo-related keyword. 
 
-Collaborators: 
-- Maya Srikanth
-- Angie Liu 
-- Nicholas Adams-Cohen
-- Dr. R. Mike Alvarez
-- Dr. Anima Anandkumar
 
 
 ## Recent Work 
