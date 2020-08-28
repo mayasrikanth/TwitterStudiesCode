@@ -1,7 +1,7 @@
 __author__ = "Maya"
 __version__ = 1.0
 '''Preprocessing script for social media data that uses parallel processing with dask.
-Warning: no lemmatization, as not doing so gives better results for dynamic
+Warning: lemmatization code present but commented out, as not doing so gives better results for dynamic
 keyword search. '''
 
 import preprocessor as p
@@ -14,9 +14,6 @@ import nltk
 from nltk.corpus import stopwords
 
 from nltk.corpus import sentiwordnet as swn
-# Do this first, that'll do something eval()
-# to "materialize" the LazyCorpusLoader
-#next(swn.all_senti_synsets()) # This is most likely considerably more inefficient...
 
 #nltk.download('stopwords')
 #import spacy
@@ -38,7 +35,7 @@ stemmer = PorterStemmer()
 import time
 import string
 
-p.set_options(p.OPT.EMOJI, p.OPT.SMILEY) #, p.OPT.URL)
+p.set_options(p.OPT.EMOJI, p.OPT.SMILEY, p.OPT.URL)
 
 
 # Storing stopwords
@@ -118,18 +115,13 @@ def applyfunctions(df):
     return pd.DataFrame(ls)
 
 def preprocess(inFile, outputFile):
-
     start = time.time()
     print("entered preprocess....")
     # Load in csv, 1 partition per cpu
     df = pd.read_csv(inFile, engine='python')
-
-    #df.columns = ['reply_text', 'vader']
-    #df = df[['reply_text']]
     df = df[['tweets']]
 
     dask_dataframe = dd.from_pandas(df, npartitions=6)
-    #df = applyfunctions(df)
     # Map functions to each partition
     result = dask_dataframe.map_partitions(applyfunctions, meta=df)
     print("mapped partitions...")
