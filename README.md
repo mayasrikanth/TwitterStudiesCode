@@ -23,4 +23,4 @@ See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selection-methods-rapidly-evolving-online, 
 our poster which shows findings from our method when applied to billions of historical MeToo tweets and to realtime 
 data.
-![alt text](/twitter/troll_example.png | width=100)
+![alt text](/twitter/troll_example.png) ![alt text](/twitter/WH_Oct17.png)
