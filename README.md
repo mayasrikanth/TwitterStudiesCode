@@ -24,16 +24,12 @@ See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selectio
 our poster with findings from dynamic keyword selection when simulated on billions of historical #MeToo tweets and applied to realtime 
 social media discussions.
 
+| First Header  | Second Header | Third Header |
+| ------------- | ------------- | ------------ |
+| Content Cell  | Content Cell  | Content Cell |
+| Content Cell  | Content Cell  | Content Cell |
 
-<table>
-  <tr><td> <figure>
-    <img src="/twitter/troll_example.png" width="300" height="300"> 
-    <figcaption>Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data.</figcaption>
-</figure></td></tr>
-  <tr><td style="width:1px">
-    Caption!      
-  </td></tr>
- </table>
+
 
 <figure>
     <img src="/twitter/troll_example.png" width="300" height="300"> 
