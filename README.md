@@ -26,24 +26,9 @@ social media discussions.
 
 | First Header  | Second Header | Third Header |
 | ------------- | ------------- | ------------ |
-|  <img src="/twitter/troll_example.png" width="300" height="300">   |  <img src="/twitter/troll_example.png" width="300" height="300">   | Content Cell |
-| Content Cell  | Content Cell  | Content Cell |
+|  <img src="/twitter/troll_example.png" width="300" height="300">   |  <img src="/twitter/WH_Oct17.png" width="300" height="300">   |  <img src="/twitter/freq-analysis.png" width="350" height="225">  |
+| Examples of anti-feminist topics discovered through simulation of dynamic selection on historical twitter data. | Top hashtags in October 2017, the month #MeToo and related women empowerment hashtags began trending. | A glimpse into current work, involving augmenting dynamic selection with ML forecasting models.  |
 
 
-
-<figure>
-    <img src="/twitter/troll_example.png" width="300" height="300"> 
-    <figcaption>Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data.</figcaption>
-</figure>
-
-<figure>
-    <img src="/twitter/WH_Oct17.png" width="300" height="300"> 
-    <figcaption> Top hashtags in October 2017, the month #MeToo and related women empowerment hashtags began trending.</figcaption>
-</figure>
-
-<figure>
-    <img src="/twitter/freq-analysis.png" width="350" height="225"> 
-    <figcaption>  A glimpse into current work, involving augmenting dynamic selection with ML forecasting models. </figcaption>
-</figure>
 
 
