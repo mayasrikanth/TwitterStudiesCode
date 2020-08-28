@@ -24,7 +24,7 @@ See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selectio
 our poster with findings from dynamic keyword selection when simulated on billions of historical #MeToo tweets and applied to realtime 
 social media discussions.
 
-| First Header  | Second Header | Third Header |
+| Anti-movements  | #MeToo Begins | Hashtag Frequencies |
 | ------------- | ------------- | ------------ |
 |  <img src="/twitter/troll_example.png" width="300" height="300">   |  <img src="/twitter/WH_Oct17.png" width="300" height="300">   |  <img src="/twitter/freq-analysis.png" width="350" height="225">  |
 | Examples of anti-feminist topics discovered through simulation of dynamic selection on historical twitter data. | Top hashtags in October 2017, the month #MeToo and related women empowerment hashtags began trending. | A glimpse into current work, involving augmenting dynamic selection with ML forecasting models.  |
