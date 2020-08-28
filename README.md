@@ -25,8 +25,7 @@ our poster with findings from dynamic keyword selection when simulated on billio
 social media discussions.
 
 
-<img src="/twitter/freq-analysis.png" width="100" height="100">
 
-![alt text](/twitter/troll_example.png) ![alt text](/twitter/WH_Oct17.png)  <img src="/twitter/freq-analysis.png" width="400" height="250">
+1. ![alt text](/twitter/troll_example.png) 2. ![alt text](/twitter/WH_Oct17.png)  3. <img src="/twitter/freq-analysis.png" width="400" height="250">
 
-Left: Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data. Middle: Trending topics in October 2017, the month #MeToo and related women empowerment hashtags began trending. Right: a glimpse of our current work, where we are augmenting dynamic selection with ML forecasting models. 
+1: Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data. 2: Trending topics in October 2017, the month #MeToo and related women empowerment hashtags began trending. 3: a glimpse into current work, involving augmenting dynamic selection with ML forecasting models. 
