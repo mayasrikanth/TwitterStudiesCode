@@ -26,7 +26,7 @@ social media discussions.
 
 | First Header  | Second Header | Third Header |
 | ------------- | ------------- | ------------ |
-| Content Cell  | Content Cell  | Content Cell |
+|  <img src="/twitter/troll_example.png" width="300" height="300">   |  <img src="/twitter/troll_example.png" width="300" height="300">   | Content Cell |
 | Content Cell  | Content Cell  | Content Cell |
 
 
