@@ -24,7 +24,8 @@ See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selectio
 our poster with findings from dynamic keyword selection when simulated on billions of historical #MeToo tweets and applied to realtime 
 social media discussions.
 
-![](/twitter/freq-analysis.png =250x250)
+
+<img src="/twitter/freq-analysis.png" width="100" height="100">
 
 ![alt text](/twitter/troll_example.png) ![alt text](/twitter/WH_Oct17.png) %![alt text](/twitter/freq-analysis.png)
 Left: Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data. Middle: Trending topics in October 2017, the month #MeToo and related women empowerment hashtags began trending. Right: a glimpse of our current work, where we are augmenting dynamic selection with ML forecasting models. 
