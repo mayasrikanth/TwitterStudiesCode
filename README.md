@@ -8,7 +8,7 @@ Read this guide for instructions on how best to utilize our code.
 In this repository, you will find code for an ongoing project to understand network effects, 
 sentiment propogation, and trolling in a social media network, with 
 the ultimate aim of proposing an AI-driven solution for online abuse. 
-The current focus of our work is the 2017-present #MeToo twitter movement.
+The current focus of our work is the 2017-present #MeToo twitter movement. 
 
 
 
@@ -21,6 +21,7 @@ See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 
 
 See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selection-methods-rapidly-evolving-online, 
-our poster which shows findings from our method when applied to billions of historical MeToo tweets and to realtime 
-data.
-![alt text](/twitter/troll_example.png) ![alt text](/twitter/WH_Oct17.png)
+our poster with findings from dynamic keyword selection when simulated on billions of historical #MeToo tweets and applied to realtime 
+social media discussions.
+![alt text](/twitter/troll_example.png) ![alt text](/twitter/WH_Oct17.png) ![alt text](/twitter/corpus-frequencies.png)
+Left: Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data. Middle: Trending topics in October 2017, the month #MeToo and related women empowerment hashtags began trending. Right: a glimpse of our current work, where we are augmenting dynamic selection with ML forecasting models. 
