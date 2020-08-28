@@ -26,6 +26,6 @@ social media discussions.
 
 
 
-1. <img src="/twitter/troll_example.png" width="300" height="300"> 2.  <img src="/twitter/WH_Oct17.png" width="300" height="300"> 3. <img src="/twitter/freq-analysis.png" width="400" height="250">
+1. <img src="/twitter/troll_example.png" width="300" height="300"> 2.  <img src="/twitter/WH_Oct17.png" width="300" height="300"> 3. <img src="/twitter/freq-analysis.png" width="350" height="225">
 
 1: Examples of anti-feminist trolls tweets discovered through simulation of dynamic selection on historical twitter data. 2: Trending topics in October 2017, the month #MeToo and related women empowerment hashtags began trending. 3: a glimpse into current work, involving augmenting dynamic selection with ML forecasting models. 
