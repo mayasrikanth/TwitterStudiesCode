@@ -22,7 +22,7 @@ See the explanation of the model here: https://nlp.stanford.edu/projects/glove/.
 
 See https://polmeth2020.org/finding-social-media-trolls-dynamic-keyword-selection-methods-rapidly-evolving-online, 
 our poster with findings from dynamic keyword selection when simulated on billions of historical #MeToo tweets and applied to realtime 
-social media discussions.
+social media discussions on voting.
 
 | Anti-movements  | #MeToo Begins | Hashtag Frequencies |
 | ------------- | ------------- | ------------ |
