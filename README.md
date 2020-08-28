@@ -11,7 +11,6 @@ the ultimate aim of proposing an AI-driven solution for online abuse.
 The current focus of our work is the 2017-present #MeToo twitter movement. 
 
 
-
 ## Recent Work 
 See https://arxiv.org/abs/1911.05332 to read more about our ongoing work where we develop
 natural language processing techniques to uncover keywords in #MeToo social media 
@@ -30,5 +29,5 @@ social media discussions on voting.
 | Examples of anti-feminist topics discovered through simulation of dynamic selection on historical twitter data. | Top hashtags in October 2017, the month #MeToo and related women empowerment hashtags began trending. | A glimpse into current work, involving augmenting dynamic selection with ML forecasting models.  |
 
 
-
-
+## Included Code
+This repo contains Stanford's GloVe implementation, as well as supplementary scripts written for our dynamic keyword selection method. In these additional scripts is code for preprocessing, forecasting (coming soon), discovering closest neighbors, and iteratively running our dynamic keyword selection over time with twitter API (coming soon). 
